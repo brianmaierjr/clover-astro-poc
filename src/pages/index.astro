@@ -4,8 +4,6 @@ import Card from '../components/Card.astro';
 const response = await fetch('https://cloverlearning.com/api/courses');
 const data = await response.json();
 const courses = data.courses; 
-console.log('courses');
-console.log(courses);
 ---
 
 <Layout title="Welcome to Astro.">
