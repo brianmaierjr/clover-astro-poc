@@ -1,0 +1,147 @@
+/**
+ * Do not edit directly
+ * Generated on Tue, 18 Jun 2024 19:55:30 GMT
+ */
+
+:root {
+	--clp-rounded-none: 0;
+	--clp-rounded-sm: 0.125em;
+	--clp-rounded-md: 0.25em;
+	--clp-rounded-lg: 0.375em;
+	--clp-rounded-xl: 0.5rem;
+	--clp-rounded-2xl: 1rem;
+	--clp-rounded-full: 9999px;
+	--clp-rounded-circle: 50%;
+	--clp-shadow-base: 0 1px 3px 0 rgb(0 0 0 / 0.1),
+		0 1px 2px -1px rgb(0 0 0 / 0.1);
+	--clp-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+	--clp-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1),
+		0 2px 4px -2px rgb(0 0 0 / 0.1);
+	--clp-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1),
+		0 4px 6px -4px rgb(0 0 0 / 0.1);
+	--clp-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1),
+		0 8px 10px -6px rgb(0 0 0 / 0.1);
+	--clp-breakpoint-sm: 40rem;
+	--clp-breakpoint-md: 48rem;
+	--clp-breakpoint-lg: 64rem;
+	--clp-breakpoint-xl: 80rem;
+	--clp-breakpoint-2xl: 96rem;
+	--clp-color-blue-50: #f2f8ff;
+	--clp-color-blue-100: #d5e4f9;
+	--clp-color-blue-200: #abc9f4;
+	--clp-color-blue-300: #80adee;
+	--clp-color-blue-400: #5096fb;
+	--clp-color-blue-500: #2b76e2;
+	--clp-color-blue-600: #2369ce;
+	--clp-color-blue-700: #004ec0;
+	--clp-color-blue-800: #003f99;
+	--clp-color-blue-900: #002355;
+	--clp-color-slate-50: #f9f9f9;
+	--clp-color-slate-100: #d6d7dd;
+	--clp-color-slate-200: #c2c4ce;
+	--clp-color-slate-300: #abaebe;
+	--clp-color-slate-400: #9a9cad;
+	--clp-color-slate-500: #85889a;
+	--clp-color-slate-600: #6b718e;
+	--clp-color-slate-700: #535878;
+	--clp-color-slate-800: #343957;
+	--clp-color-slate-900: #1f233c;
+	--clp-color-gray-50: #f8fafc;
+	--clp-color-gray-100: #e8ecf1;
+	--clp-color-gray-200: #d1d6dc;
+	--clp-color-gray-300: #a3a7ac;
+	--clp-color-gray-400: #82868b;
+	--clp-color-gray-500: #6d7073;
+	--clp-color-gray-600: #64676a;
+	--clp-color-gray-700: #5b5d60;
+	--clp-color-gray-800: #4c4e50;
+	--clp-color-gray-900: #373839;
+	--clp-color-red-50: #f8fafc;
+	--clp-color-red-100: #fedfdf;
+	--clp-color-red-200: #fccdcd;
+	--clp-color-red-300: #ed9f9f;
+	--clp-color-red-400: #e88080;
+	--clp-color-red-500: #f52828;
+	--clp-color-red-600: #d70c0c;
+	--clp-color-red-700: #ba0101;
+	--clp-color-red-800: #960000;
+	--clp-color-red-900: #710000;
+	--clp-color-green-50: #e8fcf4;
+	--clp-color-green-100: #d6f3e8;
+	--clp-color-green-200: #b4f2db;
+	--clp-color-green-300: #85dabb;
+	--clp-color-green-400: #60d2a9;
+	--clp-color-green-500: #33c18e;
+	--clp-color-green-600: #1daf7b;
+	--clp-color-green-700: #0b9b68;
+	--clp-color-green-800: #008253;
+	--clp-color-green-900: #005335;
+	--clp-color-yellow-50: #fff9ea;
+	--clp-color-yellow-100: #fef5de;
+	--clp-color-yellow-200: #fde8b4;
+	--clp-color-yellow-300: #fbe09b;
+	--clp-color-yellow-400: #ffd56d;
+	--clp-color-yellow-500: #f9cb58;
+	--clp-color-yellow-600: #e4b644;
+	--clp-color-yellow-700: #d9a82d;
+	--clp-color-yellow-800: #c8961b;
+	--clp-color-yellow-900: #b28002;
+	--clp-color-purple-50: #d4cbe2;
+	--clp-color-purple-100: #c0b1d3;
+	--clp-color-purple-200: #aa97c4;
+	--clp-color-purple-300: #957cb6;
+	--clp-color-purple-400: #8062a7;
+	--clp-color-purple-500: #6c5190;
+	--clp-color-purple-600: #584276;
+	--clp-color-purple-700: #45325d;
+	--clp-color-purple-800: #332545;
+	--clp-color-purple-900: #281d38;
+	--clp-color-black: #373839;
+	--clp-color-white: #ffffff;
+	--clp-color-surface-base: #ffffff;
+	--clp-color-surface-dark: #f8fafc;
+	--clp-color-surface-darker: #e8ecf1;
+	--clp-color-surface-alternate: #f2f8ff;
+	--clp-color-surface-accent: #1f233c;
+	--clp-color-text-base: #373839;
+	--clp-color-text-link: #004ec0;
+	--clp-color-text-weak: #64676a;
+	--clp-color-text-weaker: #6d7073;
+	--clp-color-text-on-accent: #ffffff;
+	--clp-color-text-error: #ba0101;
+	--clp-color-text-success: #008253;
+	--clp-color-text-plan-student: #004ec0;
+	--clp-color-text-plan-ct: #008253;
+	--clp-color-text-plan-ce: #6c5190;
+	--clp-font-family-sans: "Inter var", ui-sans-serif, system-ui, sans-serif,
+		Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+	--clp-font-family-heading: "filson-pro", ui-sans-serif, system-ui,
+		sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol,
+		Noto Color Emoji;
+	--clp-font-size-xs: 0.75rem;
+	--clp-font-size-sm: 0.875rem;
+	--clp-font-size-md: 1rem;
+	--clp-font-size-lg: 1.125rem;
+	--clp-font-size-xl: 1.25rem;
+	--clp-font-size-2xl: 1.5rem;
+	--clp-font-size-3xl: 1.875rem;
+	--clp-font-size-4xl: 2.25rem;
+	--clp-font-size-5xl: 3rem;
+	--clp-font-size-6xl: 3.75rem;
+	--clp-font-size-7xl: 4.5rem;
+	--clp-font-size-8xl: 6rem;
+	--clp-font-size-9xl: 8rem;
+	--clp-leading-none: 1;
+	--clp-leading-tight: 1.25;
+	--clp-leading-snug: 1.375;
+	--clp-leading-normal: 1.5;
+	--clp-leading-relaxed: 1.625;
+	--clp-leading-loose: 2;
+	--clp-space-xs: clamp(0.25rem, calc(0.23rem + 0.1vw), 0.31rem);
+	--clp-space-sm: clamp(0.5rem, calc(0.46rem + 0.21vw), 0.63rem);
+	--clp-space-md: clamp(1rem, calc(0.92rem + 0.42vw), 1.25rem);
+	--clp-space-lg: clamp(1.5rem, calc(1.38rem + 0.63vw), 1.88rem);
+	--clp-space-xl: clamp(2rem, calc(1.83rem + 0.83vw), 2.5rem);
+	--clp-space-2xl: clamp(3rem, calc(2.75rem + 1.25vw), 3.75rem);
+	--clp-space-3xl: clamp(4rem, calc(3.67rem + 1.67vw), 5rem);
+}
