@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card/Cardd/Carddd
+import Card from '../components/Card/Card.tsx';
+
 import { Image } from 'astro:assets';
 import { sanityClient } from "sanity:client";  
 const team = await sanityClient.fetch(`*[ _type == "team" ]{"imageURL": image.asset->url, ...} | order(order asc)`);
