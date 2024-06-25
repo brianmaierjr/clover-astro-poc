@@ -9,10 +9,12 @@ const team = await sanityClient.fetch(`*[ _type == "team" ]{"imageURL": image.as
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>About Page</h1>
-		<p class="instructions">
-			This page is using the Sanity API to grab the team and statically spits it out. 
-		</p>
+		<div class="introduction">
+			<h1>About Page</h1>
+			<p class="instructions">
+				This page is using the Sanity API to grab the team and statically spits it out. 
+			</p>
+		</div>
 		<ul role="list" class="link-card-grid">
 			{ team.map((member: any) => (
 			<Card
@@ -29,6 +31,9 @@ const team = await sanityClient.fetch(`*[ _type == "team" ]{"imageURL": image.as
 </Layout>
 
 <style scoped>
+	.introduction {
+		text-align: center;
+	}
 	.image {
 		width: 100%;
 		height: auto;
@@ -37,7 +42,6 @@ const team = await sanityClient.fetch(`*[ _type == "team" ]{"imageURL": image.as
 		margin: auto;
 		padding: 1rem;
 		width: calc(100% - 2rem);
-		color: white;
 		font-size: 20px;
 		line-height: 1.6;
 	}
@@ -55,7 +59,7 @@ const team = await sanityClient.fetch(`*[ _type == "team" ]{"imageURL": image.as
 		font-weight: 700;
 		line-height: 1;
 		text-align: center;
-		margin-bottom: 1em;
+		margin-bottom: .2em;
 	}
 	.text-gradient {
 		background-image: var(--accent-gradient);
@@ -64,25 +68,8 @@ const team = await sanityClient.fetch(`*[ _type == "team" ]{"imageURL": image.as
 		background-size: 400%;
 		background-position: 0%;
 	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
 	.link-card-grid {
+		margin-top: var(--clp-space-2xl);
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
 		gap: 2rem;
