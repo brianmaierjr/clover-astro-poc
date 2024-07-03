@@ -1,0 +1,9 @@
+ul {
+	display: flex;
+	gap: var(--clp-space-sm);
+	justify-content: center;
+}
+
+li {
+	list-style: none;
+}

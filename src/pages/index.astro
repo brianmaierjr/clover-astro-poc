@@ -10,10 +10,12 @@ const courses = data.courses;
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<h1>Clover Learning</h1>
-		<p class="instructions">
-			This page is using the Clover API to grab the courses and statically spits it out. 
-		</p>
+		<div class="flow header wrapper">
+			<h1 class="h2">Clover Learning</h1>
+			<p class="instructions">
+				This page is using the Clover API to grab the courses and statically spits it out. 
+			</p>
+		</div>
 		<ul role="list" class="link-card-grid">
 			{ courses.map((course: any) => (
 			<Card
@@ -46,19 +48,8 @@ const courses = data.courses;
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1rem;
-		width: min(80rem, 100% - 2rem);
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	h1 {
-		font-size: var(--clp-font-size-7xl);
-		font-weight: 700;
-		line-height: var(--clp-leading-tight); 
+	.header {
 		text-align: center;
-		margin-bottom: var(--clp-space-sm);
 	}
 	.instructions {
 		margin-bottom: 2rem;
