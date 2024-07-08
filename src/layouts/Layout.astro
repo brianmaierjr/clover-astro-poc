@@ -1,32 +1,26 @@
 ---
-import BaseHead from '../components/BaseHead.tsx'; 
-import Navigation from '../components/Navigation/Navigation.tsx';
+import BaseHead from '@components/BaseHead.astro'; 
+import Navigation from '@components/Navigation/Navigation.tsx';
 import '../scss/style.scss';
-
-
-interface Props {
-	title: string;
-}
-
-const { title } = Astro.props;
+import type SEOProps from "@clp-types/seo-props";
+export interface Props extends SEOProps {};  
 ---
 
 <!doctype html>
 <html lang="en">
-	<BaseHead />
+	<BaseHead {...Astro.props} />
 	<body>
 		<header>
 			<Navigation />
 		</header>
-		<slot />
+		<slot />	
 	</body>
 </html>
-<style is:global>
 
+<style is:global>
 	html {
 		font-family: var(--clp-font-family-sans);
 		background: var(--clp-color-surface-base);
 		color: var(--clp-color-text-base);   
 	}
-	
 </style>

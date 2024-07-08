@@ -39,7 +39,8 @@
 }
 
 .card h2 {
-	font-size: var(--clp-font-size-xl);
+	font-size: var(--clp-font-size-sm);
+	letter-spacing: normal;
 	font-weight: 700;
 	line-height: var(--clp-leading-tight);
 	font-family: var(--clp-font-family-heading);
